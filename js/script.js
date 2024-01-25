@@ -52,7 +52,7 @@ for(let item of movieDB.movies){
     let idx = movieDB.movies.indexOf(item) + 1
     let li = document.createElement('li')
     li.classList.add('promo__interactive-item')
-    img.src = '../img/rubish0_2.png'
+    img.src = './img/rubish0_2.png'
     img.style.maxWidth = '27px'
     img.style.display = 'none'
     li.innerHTML = idx + ' ' + item 
