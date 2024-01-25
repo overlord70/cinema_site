@@ -43,7 +43,7 @@ header.forEach((item,idx) => {
         prev = idx
     }
 })
-// 4 and h/w
+// 4,5,h/w
 const ul = document.querySelector('.promo__interactive-list')
 const trash = document.querySelector('.trash')
 for(let item of movieDB.movies){
@@ -56,8 +56,7 @@ for(let item of movieDB.movies){
     img.style.maxWidth = '27px'
     img.style.display = 'none'
     li.innerHTML = idx + ' ' + item 
-    div.style.display = 'flex'
-    div.style.alignItems = 'center'
+    div.classList.add('flex_0')
     div.append(li,img)
     ul.append(div)
     div.onmouseenter = () => {
