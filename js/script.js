@@ -63,8 +63,6 @@ del.onclick = () => {
 }
 li.onclick = () => {
     promoBg.style.background = `url(${item.Poster}) no-repeat center/cover`
-    header_search.classList.remove(`${item.style_header}`)
-    header_search.classList.add(`${item.style_header}`)
     divs.forEach(div => {
         if(div.className === 'promo__genre'){
             div.innerHTML = `${item.Genre}`
