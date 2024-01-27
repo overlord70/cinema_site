@@ -1,4 +1,4 @@
-let movies = [
+export let movies = [
     {
         "ID": "1",
         "Title": "Guardians of the Galaxy",
