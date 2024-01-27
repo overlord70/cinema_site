@@ -37,13 +37,14 @@ header.forEach((item,idx) => {
 // 4,5,h/w
 const ul = document.querySelector('.promo__interactive-list')
 const promoBg = document.querySelector('.promo__bg')
-console.log(ul);
+let header_search = document.querySelector('.header__search')
+const divs = document.querySelectorAll('.promo__bg div')
+let span = document.querySelectorAll('.promo__bg div span')
 function reload() {
 ul.innerHTML = ""
 
 for (let item of movies) {
 // a
-let audio = document.createElement('audio')
 let idx = movies.indexOf(item)
 let li = document.createElement('li')
 let del = document.createElement('div')
@@ -51,7 +52,6 @@ let del = document.createElement('div')
 li.classList.add( 'promo__interactive-item')
 del.classList.add('delete')
 li.innerHTML = `${idx + 1}. ${item.Title}`
-audio.src = '/mp_3/superhero-theme-7963.mp3'
 // с
 li.append(del)
 ul.append(li)
@@ -63,8 +63,31 @@ del.onclick = () => {
 }
 li.onclick = () => {
     promoBg.style.background = `url(${item.Poster}) no-repeat center/cover`
-    audio.play()
+    header_search.classList.remove(`${item.style_header}`)
+    header_search.classList.add(`${item.style_header}`)
+    divs.forEach(div => {
+        if(div.className === 'promo__genre'){
+            div.innerHTML = `${item.Genre}`
+        } else if(div.className === 'promo__title'){
+            div.innerHTML = `${item.Title}`
+        }else if (div.className === 'promo__descr'){
+            div.innerHTML = `${item.Plot}`
+        }
+        span.forEach(sp => {
+            if(sp.innerHTML.includes('IMDb:')){
+                sp.innerHTML = 'IMDb: ' + `${item.imdbRating}`
+            } else {
+                sp.innerHTML = 'Кинопоиск: ' + `${item.Metascore}`
+            }
+        })
+        
+    })
 }
 }
 }
 reload()
+promoBg.onclick = () => {
+    let audio = document.createElement('audio')
+    audio.src = './mp_3/superhero-theme-7963.mp3'
+    audio.play()
+}

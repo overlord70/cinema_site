@@ -13,6 +13,7 @@ let movies = [
         "Plot": "A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.",
         "Language": "English",
         "Country": "USA",
+        "style_header": 'first',
         "Awards": "Nominated for 2 Oscars. Another 52 wins & 100 nominations.",
         "Poster": "https://3.bp.blogspot.com/-UTaikqU2-Eg/WNUSKUnZ4CI/AAAAAAAAiBI/t9joQ-25CGYCUlk8PKoNf3RyCT0weJJJACLcB/s1600/GOTGV2.jpg",
         "Ratings": [{
@@ -53,6 +54,7 @@ let movies = [
         "Plot": "The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father the ambitious celestial being Ego.",
         "Language": "English",
         "Country": "USA",
+        "style_header": 'second',
         "Awards": "Nominated for 1 Oscar. Another 15 wins & 57 nominations.",
         "Poster": "https://v1.popcornnews.ru/k2/news/1200/upload/3mKYbr.jpg",
         "Ratings": [{
@@ -93,6 +95,7 @@ let movies = [
         "Plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
         "Language": "English, Russian, Hindi",
         "Country": "USA",
+        "style_header": 'third',
         "Awards": "Nominated for 1 Oscar. Another 38 wins & 79 nominations.",
         "Poster": "https://cdnn21.img.ria.ru/images/155277/80/1552778074_0:0:1108:623_600x0_80_0_0_0d3812d6d4a03d9f659db043ab84af16.jpg",
         "Ratings": [{
@@ -133,6 +136,7 @@ let movies = [
         "Plot": "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
         "Language": "English, Korean",
         "Country": "USA",
+        "style_header": 'fourth',
         "Awards": "8 wins & 49 nominations.",
         "Poster": "https://www.comicbookraw.com/wp-content/uploads/2020/03/age-ultron-avengers-of-.jpg",
         "Ratings": [{
@@ -173,6 +177,7 @@ let movies = [
         "Plot": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
         "Language": "English",
         "Country": "USA",
+        "style_header": 'fifth',
         "Awards": "Nominated for 1 Oscar. Another 46 wins & 73 nominations.",
         "Poster": "https://lifehacker.ru/wp-content/uploads/2019/04/InfinityWar5aabd55fed5fa.0_1556501450.jpg",
         "Ratings": [{
@@ -213,6 +218,7 @@ let movies = [
         "Plot": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
         "Language": "English, Japanese, Xhosa, German",
         "Country": "USA",
+        "style_header": 'sixth',
         "Awards": "Nominated for 1 Oscar. Another 69 wins & 102 nominations.",
         "Poster": "https://storage.kun.uz/source/4/tqosJUrhyALjXweP-PVSBz5uWJ78KOyq.jpg",
         "Ratings": [{
@@ -253,6 +259,7 @@ let movies = [
         "Plot": "While on a journey of physical and spiritual healing, a brilliant neurosurgeon is drawn into the world of the mystic arts.",
         "Language": "English",
         "Country": "USA",
+        "style_header": 'seventh',
         "Awards": "Nominated for 1 Oscar. Another 19 wins & 66 nominations.",
         "Poster": "https://img08.rl0.ru/afisha/e1200x600i/daily.afisha.ru/uploads/images/7/71/771e25c072bc45afb06a4581fd5f92d7.jpeg",
         "Ratings": [{
@@ -293,6 +300,7 @@ let movies = [
         "Plot": "Peter Parker balances his life as an ordinary high school student in Queens with his superhero alter-ego Spider-Man, and finds himself on the trail of a new menace prowling the skies of New York City.",
         "Language": "English, Spanish",
         "Country": "USA",
+        "style_header": 'eighth',
         "Awards": "7 wins & 10 nominations.",
         "Poster": "https://www.kino-teatr.ru/art/4779/65726.jpg",
         "Ratings": [{
@@ -333,6 +341,7 @@ let movies = [
         "Plot": "Following the events of Avengers: Endgame (2019), Spider-Man must step up to take on new threats in a world that has changed forever.",
         "Language": "English, Italian, Czech",
         "Country": "USA",
+        "style_header": 'nineth',
         "Awards": "10 wins & 22 nominations.",
         "Poster": "https://kinoreporter.ru/wp-content/uploads/2019/07/00-31.jpg",
         "Ratings": [{
@@ -373,6 +382,7 @@ let movies = [
         "Plot": "Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, plan and pull off a heist that will save the world.",
         "Language": "English",
         "Country": "USA",
+        "style_header": 'tenth',
         "Awards": "Nominated for 1 BAFTA Film Award. Another 4 wins & 33 nominations.",
         "Poster": "https://www.film.ru/sites/default/files/styles/thumb_1024x450/public/trailers_frame/ant-man-2015-3_1.jpg",
         "Ratings": [{
@@ -414,6 +424,7 @@ let movies = [
         "Plot": "Armed with a super-suit with the astonishing ability to shrink in scale but increase in strength, cat burglar Scott Lang must embrace his inner hero and help his mentor, Dr. Hank Pym, plan and pull off a heist that will save the world.",
         "Language": "English",
         "Country": "USA",
+        "style_header": 'tenth',
         "Awards": "Nominated for 1 BAFTA Film Award. Another 4 wins & 33 nominations.",
         "Poster": "https://www.film.ru/sites/default/files/styles/thumb_1024x450/public/trailers_frame/ant-man-2015-3_1.jpg",
         "Ratings": [{
