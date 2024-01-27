@@ -13,15 +13,6 @@
 5) Добавить нумерацию выведенных фильмов */
 
 'use strict';
-const movieDB = {
-    movies: [
-        "Логан",
-        "Лига справедливости",
-        "Ла-ла лэнд",
-        "Одержимость",
-        "Скотт Пилигрим против..."
-    ]
-};
 // 1
 const adv = document.querySelectorAll('.promo__adv img ')
 adv.forEach(element => {
@@ -45,27 +36,35 @@ header.forEach((item,idx) => {
 })
 // 4,5,h/w
 const ul = document.querySelector('.promo__interactive-list')
-const trash = document.querySelector('.trash')
-for(let item of movieDB.movies){
-    let div = document.createElement('div')
-    let img = document.createElement('img')
-    let idx = movieDB.movies.indexOf(item) + 1
-    let li = document.createElement('li')
-    li.classList.add('promo__interactive-item')
-    img.src = './img/rubish0_2.png'
-    img.style.maxWidth = '27px'
-    img.style.display = 'none'
-    li.innerHTML = idx + ' ' + item 
-    div.classList.add('flex_0')
-    div.append(li,img)
-    ul.append(div)
-    div.onmouseenter = () => {
-        img.style.display = 'block'
-        img.onclick = () => {
-            li.remove()
-        }
-    }
-    div.onmouseleave = () => {
-        img.style.display = 'none'
-    }
+const promoBg = document.querySelector('.promo__bg')
+console.log(ul);
+function reload() {
+ul.innerHTML = ""
+
+for (let item of movies) {
+// a
+let audio = document.createElement('audio')
+let idx = movies.indexOf(item)
+let li = document.createElement('li')
+let del = document.createElement('div')
+// b
+li.classList.add( 'promo__interactive-item')
+del.classList.add('delete')
+li.innerHTML = `${idx + 1}. ${item.Title}`
+audio.src = '/mp_3/superhero-theme-7963.mp3'
+// с
+li.append(del)
+ul.append(li)
+
+// d functions
+del.onclick = () => {
+    movies.splice(idx, 1)
+    reload()
 }
+li.onclick = () => {
+    promoBg.style.background = `url(${item.Poster}) no-repeat center/cover`
+    audio.play()
+}
+}
+}
+reload()
