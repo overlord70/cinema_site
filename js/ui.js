@@ -11,16 +11,7 @@ title.innerHTML = "драма"
 // 3
 let bg = document.querySelector('.promo__bg')
  bg.style.background =  `url("./img/bg.jpg") center center/cover no-repeat`
- // extra one
-const header = document.querySelectorAll('.promo__menu-item')
-let prev = 0
-header.forEach((item,idx) => {
-    item.onclick = () => {
-       header[prev].classList.remove('promo__menu-item_active')
-        item.classList.add('promo__menu-item_active')
-        prev = idx
-    }
-})
+// extra
 // 4,5,h/w
 const ul = document.querySelector('.promo__interactive-list')
 const promoBg = document.querySelector('.promo__bg')
