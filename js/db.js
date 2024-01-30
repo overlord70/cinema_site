@@ -42,7 +42,7 @@ export let movies = [
     },
     {
         "ID": "2",
-        "Title": "Guardians of the Galaxy Vol. 2",
+        "Title": "Guardians of the Galaxy 2",
         "Year": "2017",
         "Rated": "PG-13",
         "Released": "05 May 2017",
