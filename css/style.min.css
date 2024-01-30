@@ -9,10 +9,10 @@ img{
     max-width: 100%;
     object-fit: cover;
 }
-/* .wrap{
+.wrap{
     width: 1440px;
     margin: 0 auto;
-} */
+}
 .header {
     display: -webkit-box;
     display: -ms-flexbox;
